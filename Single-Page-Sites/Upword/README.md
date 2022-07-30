@@ -6,7 +6,7 @@
 
 #### Format: figma
 
-Link to website: https://olehly.github.io/Lessons-and-Practice/Front-end/Layouts-for-Junior/Upword/index.html
+Link to website: https://olehly.github.io/Front-End/Single-Page-Sites/Upword/index.html
 
 You can find the layout of this project in the "Source" folder or open it from the link below:
 https://www.figma.com/file/wVekta8YcAhHsxjNowAJMq/Upword?node-id=0%3A1
