@@ -6,7 +6,7 @@
 
 #### Format: figma
 
-Link to website: https://olehly.github.io/Lessons-and-Practice/Front-end/Layouts-for-Junior/Affiliate/index.html
+Link to website: https://olehly.github.io/Front-End/Single-Page-Sites/Affiliate/index.html
 
 You can find the layout of this project in the "Source" folder or open it from the link below:
 https://www.figma.com/file/2leFIUBXHAdSccHhRCPQH1/Affiliate?node-id=0%3A1
