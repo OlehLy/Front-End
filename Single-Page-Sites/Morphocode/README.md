@@ -6,7 +6,7 @@
 
 #### Format: figma
 
-Link to website: https://olehly.github.io/Front-End/Single-Page-Sites/Morphocode/index.html
+Link to website: https://olehly.github.io/front-end/Single-Page-Sites/Morphocode/index.html
 
 You can find the layout of this project in the "Source" folder or open it from the link below:
 
