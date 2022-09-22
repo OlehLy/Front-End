@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="css/style.css">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +11,31 @@
 </head>
 <body>
 	<div class="wrapper">
-
 		<header class="header">
 			<div class="header__container">
 				<div class="header__row">
-					<section class="header__section">
-						<div class="header__logo">
-							<a href="#"><img src="img/upword-logo.svg" alt=""></a>
-						</div>
-						<div class="header__text"><a href="#">About</a></div>
-					</section>
-					<section class="header__section">
-						<div class="header__item">
-							<div class="header__link header__link_1"><a href="#">Log in</a></div>
-							<div class="header__link header__link_2"><a href="#">Start learning</a></div>
-						</div>
-					</section>
+					<a class="header__logo">
+						<img src="img/upword-logo.svg" alt="">
+					</a>
+					<div class="header__menu menu">
+						<div class="menu__icon"><span></span></div>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li>
+									<a class="menu__logo" href="#"><img src="img/upword-logo.svg" alt=""></a>
+								</li>
+								<li>
+									<a class="menu__link" href="#">About</a>
+								</li>
+								<li>
+									<a class="menu__link" href="#">Log in</a>
+								</li>
+								<li>
+									<a class="menu__link" href="#">Start learning</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -195,47 +205,315 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="comments">
-			<div class="comments__container">
-				<div class="comments__row">
-					<div class="comments__cards">
-					<div class="comments__card card">
-						<div class="card__item">
-							<div class="card__row">
-								<div class="card__quoteses">
-									<div class="card__quotes">
-										<img src="img/quotes.svg" alt="">
-									</div>
-									<div class="card__quotes">
-										<img src="img/quotes.svg" alt="">
-									</div>
+			<div class="comments__slider swiper">
+				<div class="comments__cards swiper-wrapper">
+					<div class="comments__card swiper-slide">
+						<div class="card__row">
+							<div class="card__quoteses">
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
 								</div>
-								<div class="card__info">
-									<div class="card__text">Upword provided me a reliable way to skim, comprehend, and summarize the cases that were so quintessential to my class. I would definitely recommend Upword to anybody who is trying to secure an A and truly understand the material that is in that class."</div>
-									<div class="card__about">
-										<div class="card__logo">
-											<img src="img/institutions07.svg" alt="">
-										</div>
-										<div class="card__people">
-											<div class="card__name">Evan</div>
-											<div class="card__people__about">Cornell University, Arts and design student</div>
-										</div>
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+							</div>
+							<div class="card__info">
+								<div class="card__text">A class that I had a lot of reading assignments in was Global Development. Since each of these reading assignments were several pages, it was easy to get confused while I was reading. By using Upword's interface, I’ll be able to annotate and have a better understanding of my reading assignments in future classe."</div>
+								<div class="card__about">
+									<div class="card__logo">
+										<img src="img/institutions07.svg" alt="">
+									</div>
+									<div class="card__people">
+										<div class="card__name">Evan</div>
+										<div class="card__people__about">Cornell University, Arts and design student</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-
-					</div>
-					<div class="comments__arrows">
-						<div class="comments__arrow">
-							<img src="img/arrow.svg" alt="">
+					<div class="comments__card swiper-slide">
+						<div class="card__row">
+							<div class="card__quoteses">
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+							</div>
+							<div class="card__info">
+								<div class="card__text">Upword provided me a reliable way to skim, comprehend, and summarize the cases that were so quintessential to my class. I would definitely recommend Upword to anybody who is trying to secure an A and truly understand the material that is in that class."</div>
+								<div class="card__about">
+									<div class="card__logo">
+										<img src="img/institutions07.svg" alt="">
+									</div>
+									<div class="card__people">
+										<div class="card__name">Joshua</div>
+										<div class="card__people__about">Indiana University, Humanities student</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="comments__arrow">
-							<img src="img/arrow.svg" alt="">
+					</div>
+					<div class="comments__card swiper-slide">
+						<div class="card__row">
+							<div class="card__quoteses">
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+							</div>
+							<div class="card__info">
+								<div class="card__text">I enjoy the platform as something new and interactive that is fresh and fun. I enjoy the separation of preview and reading / skim modes. I think having the two modes is perfect to separate the two style of learning. Build in dictionary and highlighter were awesome features I really found useful! The navigation and layout of the platform was easy to move around in."</div>
+								<div class="card__about">
+									<div class="card__logo">
+										<img src="img/institutions07.svg" alt="">
+									</div>
+									<div class="card__people">
+										<div class="card__name">Kim</div>
+										<div class="card__people__about">Northeastern University, Psychology student</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comments__card swiper-slide">
+						<div class="card__row">
+							<div class="card__quoteses">
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+							</div>
+							<div class="card__info">
+								<div class="card__text">Love the preview feature, that gives me an oversight and preps my brain. The text magic is great and love that I can save and organize my reading."</div>
+								<div class="card__about">
+									<div class="card__logo">
+										<img src="img/institutions07.svg" alt="">
+									</div>
+									<div class="card__people">
+										<div class="card__name">Kyle</div>
+										<div class="card__people__about">Texas University, Social science student</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comments__card swiper-slide">
+						<div class="card__row">
+							<div class="card__quoteses">
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+							</div>
+							<div class="card__info">
+								<div class="card__text">This semester, I took a Finance class that required 3-5 articles of reading each week. Not only did Upword help me better comprehend these many articles, but it also helped me stay organized. It’s so easy to go back and review thanks to Upword's easy note-taking tools."</div>
+								<div class="card__about">
+									<div class="card__logo">
+										<img src="img/institutions07.svg" alt="">
+									</div>
+									<div class="card__people">
+										<div class="card__name">Rachel</div>
+										<div class="card__people__about">University of Chicago, Business school student</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comments__card swiper-slide">
+						<div class="card__row">
+							<div class="card__quoteses">
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+							</div>
+							<div class="card__info">
+								<div class="card__text">The audio feature helps me read better and faster than I currently do."</div>
+								<div class="card__about">
+									<div class="card__logo">
+										<img src="img/institutions07.svg" alt="">
+									</div>
+									<div class="card__people">
+										<div class="card__name">Sam</div>
+										<div class="card__people__about">Brown University, Liberal arts student</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
+				<div class="comments__buttons">
+					<div class="comments-prev">
+						<img src="img/arrow.svg" alt="">
+					</div>
+					<div class="comments-next">
+						<img src="img/arrow.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="comments comments-touch">
+			<div class="comments-touch__slider swiper">
+				<div class="comments__cards swiper-wrapper">
+					<div class="comments__card swiper-slide">
+						<div class="card__row">
+							<div class="card__quoteses">
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+							</div>
+							<div class="card__info">
+								<div class="card__text">A class that I had a lot of reading assignments in was Global Development. Since each of these reading assignments were several pages, it was easy to get confused while I was reading. By using Upword's interface, I’ll be able to annotate and have a better understanding of my reading assignments in future classe."</div>
+								<div class="card__about">
+									<div class="card__logo">
+										<img src="img/institutions07.svg" alt="">
+									</div>
+									<div class="card__people">
+										<div class="card__name">Evan</div>
+										<div class="card__people__about">Cornell University, Arts and design student</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comments__card swiper-slide">
+						<div class="card__row">
+							<div class="card__quoteses">
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+							</div>
+							<div class="card__info">
+								<div class="card__text">Upword provided me a reliable way to skim, comprehend, and summarize the cases that were so quintessential to my class. I would definitely recommend Upword to anybody who is trying to secure an A and truly understand the material that is in that class."</div>
+								<div class="card__about">
+									<div class="card__logo">
+										<img src="img/institutions07.svg" alt="">
+									</div>
+									<div class="card__people">
+										<div class="card__name">Joshua</div>
+										<div class="card__people__about">Indiana University, Humanities student</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comments__card swiper-slide">
+						<div class="card__row">
+							<div class="card__quoteses">
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+							</div>
+							<div class="card__info">
+								<div class="card__text">I enjoy the platform as something new and interactive that is fresh and fun. I enjoy the separation of preview and reading / skim modes. I think having the two modes is perfect to separate the two style of learning. Build in dictionary and highlighter were awesome features I really found useful! The navigation and layout of the platform was easy to move around in."</div>
+								<div class="card__about">
+									<div class="card__logo">
+										<img src="img/institutions07.svg" alt="">
+									</div>
+									<div class="card__people">
+										<div class="card__name">Kim</div>
+										<div class="card__people__about">Northeastern University, Psychology student</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comments__card swiper-slide">
+						<div class="card__row">
+							<div class="card__quoteses">
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+							</div>
+							<div class="card__info">
+								<div class="card__text">Love the preview feature, that gives me an oversight and preps my brain. The text magic is great and love that I can save and organize my reading."</div>
+								<div class="card__about">
+									<div class="card__logo">
+										<img src="img/institutions07.svg" alt="">
+									</div>
+									<div class="card__people">
+										<div class="card__name">Kyle</div>
+										<div class="card__people__about">Texas University, Social science student</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comments__card swiper-slide">
+						<div class="card__row">
+							<div class="card__quoteses">
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+							</div>
+							<div class="card__info">
+								<div class="card__text">This semester, I took a Finance class that required 3-5 articles of reading each week. Not only did Upword help me better comprehend these many articles, but it also helped me stay organized. It’s so easy to go back and review thanks to Upword's easy note-taking tools."</div>
+								<div class="card__about">
+									<div class="card__logo">
+										<img src="img/institutions07.svg" alt="">
+									</div>
+									<div class="card__people">
+										<div class="card__name">Rachel</div>
+										<div class="card__people__about">University of Chicago, Business school student</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="comments__card swiper-slide">
+						<div class="card__row">
+							<div class="card__quoteses">
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+								<div class="card__quotes">
+									<img src="img/quotes.svg" alt="">
+								</div>
+							</div>
+							<div class="card__info">
+								<div class="card__text">The audio feature helps me read better and faster than I currently do."</div>
+								<div class="card__about">
+									<div class="card__logo">
+										<img src="img/institutions07.svg" alt="">
+									</div>
+									<div class="card__people">
+										<div class="card__name">Sam</div>
+										<div class="card__people__about">Brown University, Liberal arts student</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-scrollbar"></div>
 			</div>
 		</div>
 
@@ -271,4 +549,7 @@
 		</footer>
 
 	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
 </body>

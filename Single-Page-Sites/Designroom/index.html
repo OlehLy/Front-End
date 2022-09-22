@@ -5,6 +5,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="css/style.css">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,28 +17,28 @@
 	<header class="header">
 		<div class="header__container container">
 			<div class="header__row">
-				<div class="header__logo">
-					<a href="#"><img src="img/logos/designroom-logo.svg" alt="logo"></a>
-				</div>
+				<a class="header__logo" href="#">
+					<img src="img/logos/designroom-logo.svg" alt="logo">
+				</a>
 				<div class="header__menu menu">
 					<div class="menu__icon"></div>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li><a class="menu__link" href="#">Home</a></li>
-							<li><a class="menu__link" href="#">About</a></li>
-							<li><a class="menu__link" href="#">Portfolio</a></li>
+							<li><a class="menu__link" href="#" data-scroll=".hi">Home</a></li>
+							<li><a class="menu__link" href="#" data-scroll=".about">About</a></li>
+							<li><a class="menu__link" href="#" data-scroll=".portfolio">Portfolio</a></li>
 							<li>
 								<div class="menu__link" href="#">Pages</div>
 								<span class="menu__arrow"></span>
 								<ul class="menu__sub-list">
 									<li>
 										<div class="menu__sub-title">Menu</div>
-										<a class="menu__sub-link" href="#">Home</a>
-										<a class="menu__sub-link" href="#">About</a>
-										<a class="menu__sub-link" href="#">Blog</a>
-										<a class="menu__sub-link" href="#">Blog post</a>
-										<a class="menu__sub-link" href="#">Portfolio</a>
-										<a class="menu__sub-link" href="#">Portfolio single</a>
+										<a class="menu__sub-link" href="#" data-scroll=".hi">Home</a>
+										<a class="menu__sub-link" href="#" data-scroll=".about">About</a>
+										<a class="menu__sub-link" href="#" data-scroll=".articles">Blog</a>
+										<a class="menu__sub-link" href="#" data-scroll=".articles">Blog post</a>
+										<a class="menu__sub-link" href="#" data-scroll=".portfolio">Portfolio</a>
+										<a class="menu__sub-link" href="#" data-scroll=".portfolio">Portfolio single</a>
 									</li>
 									<li>
 										<div class="menu__sub-title">Packages</div>
@@ -163,8 +164,8 @@
 			<div class="about__row">
 				<div class="about__name">
 					<div class="about__title left-caption__title">About us</div>
-					<p class="about__text">Enim aliquam pharetra at ut morbi aliquet sit platea eget non ullamcorper sed
-						sagittis augue id tinciduntol cursus eget tristique feugiat diam laoreet aliquet egestas leo enim
+					<p class="about__text">Enim aliquam pharetra at ut morbi aliquet sit platea eget non 	ullamcorper sed
+						sagittis augue id tinciduntol cursus eget tristique feugiat diam laoreet aliquet 	egestas leo enim
 						vitae fringilla id feugiat.</p>
 				</div>
 				<div class="about__images">
@@ -175,18 +176,12 @@
 						<img src="img/about/people2.png" alt="">
 					</div>
 				</div>
-			</div>
-			<div class="about__row">
-				<div class="about__img-girl">
+				<div class="about__img">
 					<img src="img/about/people3.png" alt="">
 				</div>
 				<div class="about__about">
-					<p class="about__text">Sed sit commodo pretium enim eget amet eget in volutpatdolor felis sed leo id amet
-						amet sed euismod sed malesuada nec scelerisque leo aliquam in odio cras ultrices odio quis massa amet
-						convallis.</p>
-					<p class="about__text">Rhoncus a netus ante eget dignissim massa sit tinciduntpharetra pellentesque
-						adipiscing eu orci ut rhoncus aliquam tempor nibh in netus duis lacus assa dignissim sapien risus
-						nulla massa accumsan.</p>
+					<p class="about__text">Sed sit commodo pretium enim eget amet eget in volutpatdolor felis sed leo id amet amet sed euismod sed malesuada nec scelerisque leo aliquam in odio cras ultrice odio quis massa amet convallis.</p>
+					<p class="about__text">Rhoncus a netus ante eget dignissim massa sit tinciduntpharetra pellentesque adipiscing eu orci ut rhoncus aliquam tempor nibh in netus duis lacus ass dignissim 	sapien risus nulla massa accumsan.</p>
 					<a class="about__button button_violet" href="#">About us</a>
 				</div>
 			</div>
@@ -260,52 +255,101 @@
 		<div class="process__container">
 			<div class="caption-center">
 				<div class="center-caption__title">Our process</div>
-				<div class="center-caption__text">Elit aliquam quisque cras vitae sit viverra purus phasellus eget
-					conse
-					risus cursus ultricies sed turpis a adipiscing.</div>
+				<div class="center-caption__text">Elit aliquam quisque cras vitae sit viverra purus phasellus eget conse risus cursus ultricies sed turpis a adipiscing.</div>
 			</div>
-			<div class="process__cards">
-				<div class="process__card">
-					<div class="process__img">
-						<img src="img/process/1.svg" alt="">
+			<div class="procces__slider swiper">
+				<div class="process__cards swiper-wrapper">
+					<div class="process__card swiper-slide">
+						<div class="process__card__row">
+							<div class="process__img">
+								<img src="img/process/1.svg" alt="">
+							</div>
+							<div class="process__item">
+								<div class="process__title">1. Project Idea</div>
+								<div class="process__text">Tempus vitae mi purus velit et et rhoncus placerat etlobortis lacinia congue etiam felis aliquam ina non consectetur amet cursus quam sitsoci elementum urna commodo proin interdum.</div>
+							</div>
+						</div>
 					</div>
-					<div class="process__item">
-						<div class="process__title">1. Project Idea</div>
-						<div class="process__text">Tempus vitae mi purus velit et et rhoncus placerat et lobortis
-							lacinia
-							congue etiam felis aliquam ina non consectetur amet cursus quam sit sociis lacus elementum
-							urna
-							commodo proin interdum.</div>
+					<div class="process__card swiper-slide">
+						<div class="process__card__row">
+							<div class="process__img">
+								<img src="img/process/2.svg" alt="">
+							</div>
+							<div class="process__item">
+								<div class="process__title">2. Execution</div>
+								<div class="process__text">Tempus vitae mi purus velit et et rhoncus placerat etlobortis lacinia congue etiam felis aliquam ina non consectetur amet cursus quam sitsoci elementum urna commodo proin interdum.</div>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="process__card">
-					<div class="process__img">
-						<img src="img/process/2.svg" alt="">
-					</div>
-					<div class="process__item">
-						<div class="process__title">2. Execution</div>
-						<div class="process__text">Tempus vitae mi purus velit et et rhoncus placerat et lobortis lacinia
-							congue etiam felis aliquam ina non consectetur amet cursus quam sit sociis lacus elementum urna
-							commodo proin interdum.</div>
-					</div>
-				</div>
-				<div class="process__card">
-					<div class="process__img">
-						<img src="img/process/3.svg" alt="">
-					</div>
-					<div class="process__item">
-						<div class="process__title">3. Deliver</div>
-						<div class="process__text">Tempus vitae mi purus velit et et rhoncus placerat et lobortis
-							lacinia
-							congue etiam felis aliquam ina non consectetur amet cursus quam sit sociis lacus elementum
-							urna
-							commodo proin interdum.</div>
+					<div class="process__card swiper-slide">
+						<div class="process__card__row">
+							<div class="process__img">
+								<img src="img/process/3.svg" alt="">
+							</div>
+							<div class="process__item">
+								<div class="process__title">3. Deliver</div>
+								<div class="process__text">Tempus vitae mi purus velit et et rhoncus placerat etlobortis lacinia congue etiam felis aliquam ina non consectetur amet cursus quam sit lacuselementum urna commodo proin interdum.</div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="process__block process__block-1"></div>
-				<div class="process__block process__block-2"></div>
+				 
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
 			</div>
-			<a class="process__button button_violet" href="#">Contact us</a>
+			<div class="process__button">
+				<a class="button_violet" href="#">Contact us</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="process process-touch">
+		<div class="process__container">
+			<div class="caption-center">
+				<div class="center-caption__title">Our process</div>
+				<div class="center-caption__text">Elit aliquam quisque cras vitae sit viverra purus phasellus eget conse risus cursus ultricies sed turpis a adipiscing.</div>
+			</div>
+			<div class="procces-touch__slider swiper">
+				<div class="process__cards swiper-wrapper">
+					<div class="process__card swiper-slide">
+						<div class="process__card__row">
+							<div class="process__img">
+								<img src="img/process/1.svg" alt="">
+							</div>
+							<div class="process__item">
+								<div class="process__title">1. Project Idea</div>
+								<div class="process__text">Tempus vitae mi purus velit et et rhoncus placerat etlobortis lacinia congue etiam felis aliquam ina non consectetur amet cursus quam sitsoci elementum urna commodo proin interdum.</div>
+							</div>
+						</div>
+					</div>
+					<div class="process__card swiper-slide">
+						<div class="process__card__row">
+							<div class="process__img">
+								<img src="img/process/2.svg" alt="">
+							</div>
+							<div class="process__item">
+								<div class="process__title">2. Execution</div>
+								<div class="process__text">Tempus vitae mi purus velit et et rhoncus placerat etlobortis lacinia congue etiam felis aliquam ina non consectetur amet cursus quam sitsoci elementum urna commodo proin interdum.</div>
+							</div>
+						</div>
+					</div>
+					<div class="process__card swiper-slide">
+						<div class="process__card__row">
+							<div class="process__img">
+								<img src="img/process/3.svg" alt="">
+							</div>
+							<div class="process__item">
+								<div class="process__title">3. Deliver</div>
+								<div class="process__text">Tempus vitae mi purus velit et et rhoncus placerat etlobortis lacinia congue etiam felis aliquam ina non consectetur amet cursus quam sit lacuselementum urna commodo proin interdum.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-scrollbar"></div>
+			</div>
+			<div class="process__button">
+				<a class="button_violet" href="#">Contact us</a>
+			</div>
 		</div>
 	</div>
 
@@ -314,39 +358,28 @@
 			<div class="caption-left">
 				<div class="left-caption__title">Our articles</div>
 				<div class="articles__row">
-					<div class="left-caption__text">Enim aliquam pharetra at ut morbi aliquet sit platea eget non
-						ullamcorper
-						sed sagittis augu.</div>
+					<div class="articles__text left-caption__text">Enim aliquam pharetra at ut morbi aliquet sit platea eget non ullamcorper sed sagittis augu.</div>
 					<a class="articles__button button_white" href="#">Browse all articles</a>
 				</div>
 			</div>
 			<div class="articles__cards">
-				<div class="articles__card">
-					<a class="articles-card__button button_white" href="#">News</a>
-					<a href="#">
-						<div class="articles-card__img">
-							<img src="img/articles/firth-foto.png" alt="">
-						</div>
-						<div class="articles-card__text">
-							<div class="articles-card__name">Why is 3D changing the game for marketing teams around the
-								globe
-							</div>
-							<div class="articles-card__data">April 19, 2022</div>
-						</div>
+				<div class="articles-card">
+					<a class="articles-card__button" href="#">News</a>
+					<div class="articles-card__img">
+						<img src="img/articles/firth-foto.png" alt="">
+					</div>
+					<a class="articles-card__name" href="#">Why is 3D changing the game for marketing teams around the globe
 					</a>
+					<div class="articles-card__data">April 19, 2022</div>
 				</div>
-				<div class="articles__card">
-					<a class="articles-card__button button_white" href="#">Resources</a>
-					<a href="#">
-						<div class="articles-card__img">
-							<img src="img/articles/firth-foto.png" alt="">
-						</div>
-						<div class="articles-card__text">
-							<div class="articles-card__name">10 benefits of creating 3d animated videos for your business
-							</div>
-							<div class="articles-card__data">April 19, 2022</div>
-						</div>
+				<div class="articles-card">
+					<a class="articles-card__button" href="#">Resources</a>
+					<div class="articles-card__img">
+						<img src="img/articles/second-foto.png" alt="">
+					</div>
+					<a class="articles-card__name" href="#">10 benefits of creating 3d animated videos for your business
 					</a>
+					<div class="articles-card__data">April 19, 2022</div>
 				</div>
 			</div>
 		</div>
@@ -357,8 +390,8 @@
 			<div class="work__row">
 				<div class="work__title">Let’s work together</div>
 				<div class="work__buttons">
-					<a class="work__button_1 button_violet" href="#">contact@designroom.com</a>
-					<a class="work__button_2 button_white" href="#">+1 (414) 840 - 3207</a>
+					<a class="work__button_1" href="#">contact@designroom.com</a>
+					<a class="work__button_2" href="#">+1 (414) 840 - 3207</a>
 				</div>
 			</div>
 		</div>
@@ -367,7 +400,7 @@
 	<footer class="footer">
 		<div class="footer__container container">
 			<div class="footer__row">
-				<div class="fooler__about">
+				<div class="footer__about">
 					<div class="footer-about__logo">
 						<img src="img/logos/designroom-logo-white.svg" alt="">
 					</div>
@@ -419,7 +452,8 @@
 			</div>
 		</div>
 	</footer>
-
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 

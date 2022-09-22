@@ -53,11 +53,59 @@ if (iconMenu) {
 	});
 };
 
-// Background color for header
+// JQuery
+$(function(){
 
-// Effect for portfolio card on hover
+	let header = $('.header');
+	let hiHeight = $('.hi').innerHeight();
+	let scrollOffset = $(window).scrollTop();
 
+	// Fixed Header
+	checkScroll(scrollOffset)
 
+	$(window).on("scroll", function(){
+		scrollOffset = $(this).scrollTop();
+		checkScroll(scrollOffset)
+	});
+	function checkScroll(scrollOfset){
+		if (scrollOfset >= hiHeight){
+			header.addClass("fixed");
+		} else {
+			header.removeClass("fixed")
+		}
+		
+	};
 
-// Effect for articles card
+	// Smooth Scroll
+	$("[data-scroll]").on("click", function(event){
+		event.preventDefault();
+		let blockId = $(this).data("scroll");
+		let blockOffset = $(blockId).offset().top;
 
+		$("html, body").animate({
+			scrollTop: blockOffset
+		}, 500);
+	});
+});
+
+// Slider
+const swiperOne = new Swiper('.procces__slider', {
+	loop: true,
+ 
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+	simulateTouch: false,
+	autoHeight: true,
+});
+
+// Slider for Mobile
+const swiperTwo = new Swiper('.procces-touch__slider', {
+	simulateTouch: true,
+	autoHeight: true,
+	scrollbar: {
+		el: '.swiper-scrollbar',
+		draggable: true
+	},
+});
