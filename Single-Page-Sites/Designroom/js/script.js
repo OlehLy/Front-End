@@ -44,8 +44,8 @@ if (isMobile.any()) {
 
 // Burger menu
 const iconMenu = document.querySelector('.menu__icon');
+const menuBody = document.querySelector('.menu__body');
 if (iconMenu) {
-	const menuBody = document.querySelector('.menu__body');
 	iconMenu.addEventListener("click", function (e) {
 		document.body.classList.toggle('_lock');
 		iconMenu.classList.toggle('_active');
@@ -53,10 +53,11 @@ if (iconMenu) {
 	});
 };
 
-// JQuery
+// Add fixed to header
 $(function(){
 
 	let header = $('.header');
+	let headerBody = $('.menu__body');
 	let hiHeight = $('.hi').innerHeight();
 	let scrollOffset = $(window).scrollTop();
 
@@ -65,15 +66,16 @@ $(function(){
 
 	$(window).on("scroll", function(){
 		scrollOffset = $(this).scrollTop();
-		checkScroll(scrollOffset)
+		checkScroll(scrollOffset);
 	});
 	function checkScroll(scrollOfset){
 		if (scrollOfset >= hiHeight){
 			header.addClass("fixed");
+			headerBody.addClass("fixed")
 		} else {
 			header.removeClass("fixed")
+			headerBody.removeClass("fixed")
 		}
-		
 	};
 
 	// Smooth Scroll
@@ -81,7 +83,11 @@ $(function(){
 		event.preventDefault();
 		let blockId = $(this).data("scroll");
 		let blockOffset = $(blockId).offset().top;
-
+		if (iconMenu.classList.contains('_active')){
+			document.body.classList.remove('_lock');
+			iconMenu.classList.remove('_active');
+			menuBody.classList.remove('_active');
+		};
 		$("html, body").animate({
 			scrollTop: blockOffset
 		}, 500);
@@ -91,7 +97,7 @@ $(function(){
 // Slider
 const swiperOne = new Swiper('.procces__slider', {
 	loop: true,
- 
+
 	navigation: {
 	  nextEl: '.swiper-button-next',
 	  prevEl: '.swiper-button-prev',

@@ -524,8 +524,19 @@ body._touch .menu__list>li._active .menu__arrow {
 	.menu__body._active {
 		left: 0;
 	}
-
-	.menu__body::before {
+	.menu__body._active::before{
+		content: '';
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		height: 60px;
+		border-radius: 0 0 20px 20px;
+		box-shadow: 0px 4px 14px rgba(56, 57, 84, 0.1);
+		background-color: #fff;
+		z-index: 10;
+	}
+	.menu__body.fixed::before {
 		content: '';
 		position: fixed;
 		width: 100%;
